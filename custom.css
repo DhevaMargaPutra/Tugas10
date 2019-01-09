@@ -12,6 +12,18 @@ h1 {
     font-size: 7rem;
 }
 
+.my-footer {
+    position: absolute;
+    text-decoration: none;
+    bottom: 1rem;
+    right: 3rem;
+    color: white;
+}
+
+.my-footer:hover {
+    color: white;
+}
+
 .my-background {
     height: 100%;
     background-image: url("http://i.imgur.com/KY3hVMa.jpg");
@@ -35,8 +47,8 @@ h1 {
     border-style: solid;
     border-color: rgba(0, 0, 0, 0.3);
     position: absolute;
-    right: 6%;
-    bottom: 10%;
+    right: 3rem;
+    bottom: 4rem;
 }
 
 .btn-outline-danger {
