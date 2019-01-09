@@ -9,11 +9,9 @@ if (JSON.parse(localStorage.getItem ("jList") != null)) {
     render ();
 }
 
-
 masukanBtn.addEventListener ("click", function() {
     if (inputFld.value != "") {
         jadwalArr.push(inputFld.value);
-        localStorage.setItem ("jList", JSON.stringify(jadwalArr));
         render ();
         inputFld.value = "";
     } else {
@@ -23,6 +21,7 @@ masukanBtn.addEventListener ("click", function() {
 });
 
 function render () {
+    localStorage.setItem ("jList", JSON.stringify(jadwalArr));
     var i = 0;
     jadwalLst.innerHTML = "";
     while (i < jadwalArr.length) {
@@ -33,7 +32,7 @@ function render () {
 
 function delList (index) {
     console.log (index);
-    jadwalArr.slice (index, 1);
+    jadwalArr.splice (index, 1);
     console.log (jadwalArr);
     render ();
 }
