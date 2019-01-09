@@ -9,20 +9,22 @@
     <title>Todo Delete</title>
 </head>
 <body class="my-background">
-    <div class="container">
-        <ul id="lst">
-            <!-- <li>Ujian Sekolah<button>X</button></li>
-            <li>Tryout Sekolah<button>X</button></li>
-            <li>Ujian BISA<button>X</button></li> -->
-        </ul>
-        <input id="in" placeholder="masukan jadwal"/>
-        <button id="sub">Masukan</button>
+    <h1>Todo</h1>
+    <div class="my-container">
+        <div class="card" style="width: 18rem;">
+            <ul id="lst" class="list-group list-group-flush">
+                <li class="list-group-item"><input type="checkbox"><button type="button" class="btn btn-outline-danger" onclick="delList()">X</button>
+                <!--<li>Tryout Sekolah<button>X</button></li>
+                <li>Ujian BISA<button>X</button></li> -->
+            </ul>
+            <input id="in" placeholder="Saya akan melakukan..."/>
+            <button id="sub" type="button" class="btn btn-success">Tambah</button>
+        </div>        
     </div>
-
     <script src="main.js">
     </script>
 </body>
-<footer>
+<!-- <footer>
         <a href='https://www.freepik.com/free-photo/ready-for-back-to-school_902435.htm'>Designed by Creativeart</a>
-</footer>
+</footer> -->
 </html>

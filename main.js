@@ -25,7 +25,7 @@ function render () {
     var i = 0;
     jadwalLst.innerHTML = "";
     while (i < jadwalArr.length) {
-        jadwalLst.innerHTML += '<li>' + jadwalArr[i] + '<button onclick="delList(' + i + ')">X</button></li>';
+        jadwalLst.innerHTML += '<li class="list-group-item"><div class="checkbox-item"><input type="checkbox"></div><div class="text-item">'+jadwalArr[i]+'</div><div class="delete-item"><button type="button" class="btn btn-outline-danger" onclick="delList('+i+')">X</button></div></li>';
         i++;
     }
 }

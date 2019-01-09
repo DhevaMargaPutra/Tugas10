@@ -1,4 +1,61 @@
+body, html {
+    height: 100%;
+}
+ 
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    color: white;
+}
+
 .my-background {
+    height: 100%;
     background-image: url("http://i.imgur.com/KY3hVMa.jpg");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.my-container {
+    position: relative;
+    height: 100%;
+    /* height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.card {
+    border: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    right: 6%;
+    bottom: 10%;
+}
+
+.btn-outline-danger {
+    border-radius: 50%;
+}
+
+.list-group-item {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.checkbox-item {
+    width: 10%;
+}
+
+.text-item {
+    width: 80%;
+}
+
+.delete-item {
+    width: 10%;
 }
