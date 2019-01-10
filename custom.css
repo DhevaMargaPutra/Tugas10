@@ -18,15 +18,17 @@ h1 {
     bottom: 1rem;
     right: 3rem;
     color: white;
+    text-shadow: -10px 4px 20px rgba(0,0,0,0.4);
 }
 
 .my-footer:hover {
     color: white;
+    text-shadow: -10px 4px 20px rgba(0,0,0,0.4);
 }
 
 .my-background {
     height: 100%;
-    background-image: url("coba.jpg");
+    background-image: url("https://i.imgur.com/aDqR1GY.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -43,13 +45,11 @@ h1 {
 }
 
 .card {
-    border: 1px;
-    border-style: solid;
-    border-color: rgba(0, 0, 0, 0.3);
     position: absolute;
     right: 3rem;
     bottom: 4rem;
     background-color: transparent;
+    box-shadow: -10px 4px 20px rgba(0,0,0,0.2);
 }
 
 .btn-outline-danger {
@@ -72,8 +72,4 @@ h1 {
 
 .delete-item {
     width: 10%;
-}
-
-.btn-success {
-    
 }
