@@ -3,8 +3,10 @@ const masukanBtn = document.getElementById("sub");
 const inputFld = document.getElementById("in");
 
 var todos = [];
-todos = JSON.parse (localStorage.getItem ("todos"));
-render ();
+if (localStorage.getItem ("todos") != null) {
+    todos = JSON.parse (localStorage.getItem ("todos"));
+    render ();
+}
 
 masukanBtn.addEventListener ("click", function() {
     if (inputFld.value != "") {
