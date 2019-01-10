@@ -73,3 +73,13 @@ h1 {
 .delete-item {
     width: 10%;
 }
+
+.btn-primary {
+    background-color: rgb(94, 164, 198);
+    border-color: rgb(94, 164, 198);
+}
+
+.btn-primary:hover {
+    background-color: #4c88a5;
+    border-color: #4c88a5;
+}
